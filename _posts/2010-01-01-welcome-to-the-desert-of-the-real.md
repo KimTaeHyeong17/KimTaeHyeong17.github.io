@@ -1,11 +1,10 @@
 ---
 date: 2019-05-16 23:48:05
 layout: post
-title: Welcome to the desert of the real
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+title: 하닝야의 블로그에 오신걸 환영합니다.
+subtitle: This Website is under Construction.
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua.
+  이거 어떻게 하는건지 모르겠는데 일단 까리하네
 image: >-
   https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme6_qeeojf.jpg
 optimized_image: >-
