@@ -1,7 +1,7 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by Thiago Rossener.
+name: HaningYa Develope Blog
+title: HaningYa | CS Student
+description: iOS, Android, Java, Swift, (Cloud, ML, Algorithm)
 tags:
   - blog
   - template
@@ -15,12 +15,12 @@ show_hero: true
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+github_username: KimTaeHyeong17
+# facebook_username: facebook_username
+# twitter_username: twitter_username
+instagram_username: cse__kth
+linkedin_username: uuzaza74@gmail.com
+# medium_username: medium_username
 
 
 # Theme Settings
@@ -40,7 +40,7 @@ two_columns_layout: true
 
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "kimtaehyeong17.github.io" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 language: "en"
 
