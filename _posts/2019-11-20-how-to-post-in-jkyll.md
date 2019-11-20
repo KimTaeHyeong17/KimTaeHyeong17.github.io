@@ -25,3 +25,5 @@ paginate: false
 ./initpost.sh -c "POST_TITLE"
 ```
 하면 끗
+
+참고 : https://github.com/thiagorossener/jekflix-template/wiki/post#creating-a-post
