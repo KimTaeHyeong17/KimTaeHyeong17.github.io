@@ -1,5 +1,5 @@
 # Site Settings
-name: HaningYa Develope Blog
+name: HaningYa Blog
 title: HaningYa | CS Student
 description: iOS, Android, Java, Swift, (Cloud, ML, Algorithm)
 tags:
@@ -8,7 +8,7 @@ tags:
   - jekyll
   - theme
   - netlify
-email: youremail@xyz.com
+email: uuzaza@naver.com
 disqus_username: disqus_username
 show_hero: true
 
@@ -18,8 +18,8 @@ show_hero: true
 github_username: KimTaeHyeong17
 # facebook_username: facebook_username
 # twitter_username: twitter_username
-instagram_username: cse__kth
-linkedin_username: uuzaza74@gmail.com
+instagram_username: cse_kth
+linkedin_username: taehyeong-kim-a6b8bb17b
 # medium_username: medium_username
 
 
