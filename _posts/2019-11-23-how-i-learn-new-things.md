@@ -12,7 +12,7 @@ tags:
     - learning
     - english
     - tips
-author: HaningYa
+author: TaeHyeong Kim
 paginate: false
 ---
 ##How I learn something : get used to it

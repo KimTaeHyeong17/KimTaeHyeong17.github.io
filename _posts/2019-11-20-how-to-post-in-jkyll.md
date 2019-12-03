@@ -11,7 +11,7 @@ tags:
     - github
     - jekflix
     - jekyll
-author: HaningYa
+author: TaeHyeong Kim
 paginate: false
 ---
 
