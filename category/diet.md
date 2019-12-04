@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Diet
-slug: diet
-description: A category for diet related posts.
+title: Cloud
+slug: cloud
+description: A category for cloud related posts.
 ---
