@@ -1,88 +1,142 @@
-<footer>
-    <p>
-      {% if site.github_username %}
-        <a href="https://github.com/{{ site.github_username }}" title="Github">
-          <svg><use xlink:href="#icon-github"></use></svg>
-        </a>
-      {% endif %}
-      {% if site.facebook_username %}
-        <a href="https://www.facebook.com/{{ site.facebook_username }}" title="Facebook">
-          <svg><use xlink:href="#icon-facebook"></use></svg>
-        </a>
-      {% endif %}
-      {% if site.twitter_username %}
-        <a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter">
-          <svg><use xlink:href="#icon-twitter"></use></svg>
-        </a>
-      {% endif %}
-      {% if site.medium_username %}
-        <a href="https://medium.com/@{{ site.medium_username }}" title="Medium">
-          <svg><use xlink:href="#icon-medium"></use></svg>
-        </a>
-      {% endif %}
-      {% if site.instagram_username %}
-        <a href="https://www.instagram.com/{{ site.instagram_username }}" title="Instagram">
-          <svg><use xlink:href="#icon-instagram"></use></svg>
-        </a>
-      {% endif %}
-      {% if site.linkedin_username %}
-        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn">
-          <svg><use xlink:href="#icon-linkedin"></use></svg>
-        </a>
-      {% endif %}
-    </p>
+<div class="container mx-auto px-4-DIS">
+  <footer class="text-gray-400 bg-gray-900 body-font">
+<!--    <div-->
+<!--      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">-->
+<!--      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">-->
+<!--        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">-->
+<!--          <img class="w-12 h-12" src="/assets/img/cookie.png" alt="Cookie" />-->
+<!--          <span class="ml-3 text-xl">Cookie</span>-->
+<!--        </a>-->
+<!--        <p class="mt-2 text-sm text-gray-500">Cookie is a Jekyll and Tailwind CSS based landing website</p>-->
+<!--      </div>-->
+<!--      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">-->
+<!--        <div class="lg:w-1/4 md:w-1/2 w-full px-4">-->
+<!--          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">USEFUL LINKS</h2>-->
+<!--          <nav class="list-none mb-10">-->
+<!--            <li>-->
+<!--              <a class="text-gray-400 hover:text-white" href="/about">About</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a class="text-gray-400 hover:text-white" href="/blog">Blog</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a class="text-gray-400 hover:text-white" href="https://www.github.com/abhinavs">GitHub</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a class="text-gray-400 hover:text-white" href="https://www.twitter.com/abhinav">Twitter</a>-->
+<!--            </li>-->
+<!--          </nav>-->
+<!--        </div>-->
+<!--        <div class="lg:w-1/4 md:w-1/2 w-full px-4">-->
+<!--          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">OTHER RESOURCES</h2>-->
+<!--          <nav class="list-none mb-10">-->
+<!--            <li>-->
+<!--              <a class="text-gray-400 hover:text-white" href="/terms">Terms & Conditions</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a class="text-gray-400 hover:text-white" href="pricacy-policy">Privacy Policy</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a class="text-gray-400 hover:text-white" href="contact-us">Contact Us</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a class="text-gray-400 hover:text-white" href="https://www.github.com/abhinavs/cookie">Code</a>-->
+<!--            </li>-->
+<!--          </nav>-->
+<!--        </div>-->
+<!--        <div class="lg:w-1/4 md:w-1/2 w-full px-4">-->
+<!--          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>-->
+<!--          <nav class="list-none mb-10">-->
+<!--            <li>-->
+<!--              <a class="text-gray-400 hover:text-white">First Link</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a class="text-gray-400 hover:text-white">Second Link</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a class="text-gray-400 hover:text-white">Third Link</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a class="text-gray-400 hover:text-white">Fourth Link</a>-->
+<!--            </li>-->
+<!--          </nav>-->
+<!--        </div>-->
+<!--        <div class="lg:w-1/4 md:w-1/2 w-full px-4">-->
+<!--          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>-->
+<!--          <nav class="list-none mb-10">-->
+<!--            <li>-->
+<!--              <a class="text-gray-400 hover:text-white">First Link</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a class="text-gray-400 hover:text-white">Second Link</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a class="text-gray-400 hover:text-white">Third Link</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a class="text-gray-400 hover:text-white">Fourth Link</a>-->
+<!--            </li>-->
+<!--          </nav>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!---->
+<!--    <div class="bg-gray-800 bg-opacity-75">-->
+<!--      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">-->
+<!--        <p class="text-gray-400 text-sm text-center sm:text-left">© 2022 Cookie —-->
+<!--          <a href="https://twitter.com/abhinav" rel="noopener noreferrer" class="text-gray-500 ml-1"-->
+<!--            target="_blank">@abhinav</a>-->
+<!--          &nbsp;-->
+<!--          •-->
+<!--          &nbsp;-->
+<!--          Powered by <a class="hover:text-indigo-600 font-semibold" href="https://www.soopr.co" target="_blank"-->
+<!--            rel="noreferrer">Soopr</a>-->
+<!--          &nbsp;-->
+<!--          •-->
+<!--          &nbsp;-->
+<!--          Theme&nbsp;<a class="hover:text-indigo-600 font-semibold" href="https://github.com/abhinavs/cookie"-->
+<!--            target="_blank" rel="noreferrer">Cookie</a>-->
+<!--        </p>-->
+<!--        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">-->
+<!--          <a class="text-gray-400">-->
+<!--            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"-->
+<!--              viewBox="0 0 24 24">-->
+<!--              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>-->
+<!--            </svg>-->
+<!--          </a>-->
+<!--          <a class="ml-3 text-gray-400">-->
+<!--            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"-->
+<!--              viewBox="0 0 24 24">-->
+<!--              <path-->
+<!--                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">-->
+<!--              </path>-->
+<!--            </svg>-->
+<!--          </a>-->
+<!--          <a class="ml-3 text-gray-400">-->
+<!--            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+<!--              class="w-5 h-5" viewBox="0 0 24 24">-->
+<!--              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>-->
+<!--              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>-->
+<!--            </svg>-->
+<!--          </a>-->
+<!--          <a class="ml-3 text-gray-400">-->
+<!--            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"-->
+<!--              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">-->
+<!--              <path stroke="none"-->
+<!--                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>-->
+<!--              <circle cx="4" cy="4" r="2" stroke="none"></circle>-->
+<!--            </svg>-->
+<!--          </a>-->
+<!--        </span>-->
+<!--      </div>-->
+<!--    </div>-->
+  </footer>
 
-    {% include links.html %}
-
-    <p>
-      <span>Jekflix</span> was made with <svg class="love"><use xlink:href="#icon-heart"></use></svg> by <a href="https://rossener.com" target="_blank" class="creator">Thiago Rossener</a>
-    </p>
-</footer>
-
-{% assign social_urls = '' %}
-{% if site.github_username %}
-    {% assign social_urls = social_urls | append: '"https://github.com/' | append: site.github_username | append: '",' %}
-{% endif %}
-{% if site.facebook_username %}
-    {% assign social_urls = social_urls | append: '"https://www.facebook.com/' | append: site.facebook_username | append: '",' %}
-{% endif %}
-{% if site.twitter_username %}
-    {% assign social_urls = social_urls | append: '"https://twitter.com/' | append: site.twitter_username | append: '",' %}
-{% endif %}
-{% if site.medium_username %}
-    {% assign social_urls = social_urls | append: '"https://medium.com/@' | append: site.medium_username | append: '",' %}
-{% endif %}
-{% if site.instagram_username %}
-    {% assign social_urls = social_urls | append: '"https://www.instagram.com/' | append: site.instagram_username | append: '",' %}
-{% endif %}
-{% if site.linkedin_username %}
-    {% assign social_urls = social_urls | append: '"https://www.linkedin.com/in/' | append: site.linkedin_username | append: '",' %}
-{% endif %}
-
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "name": "{{ site.name }}",
-  "description": "{{ site.description }}",
-  "url": "{{ site.url }}{{site.baseurl}}/",
-  "logo": {
-      "@type": "ImageObject",
-      "url": "{{ site.url }}{{site.baseurl}}/assets/img/icons/mediumtile.png",
-      "width": "600",
-      "height": "315"
-  },
-  "sameAs": [
-    {{ social_urls | split: "," | join: "," }}
-  ]
-}
-</script>
-
-<!-- Include the script that allows Netlify CMS login -->
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-<!-- Include the website scripts -->
-<script src="{{ '/assets/js/scripts.min.js' | prepend: site.baseurl }}"></script>
-
-<!-- Include Google Analytics script -->
-{% include stats.html %}
+  {%- if site.soopr -%}
+  {%- if site.soopr.publish_token and jekyll.environment == "production" -%}
+  <script async='' data-soopr-token="{{site.soopr.publish_token}}" defer='defer' src="https://sdk.soopr.co/soopr.js">
+  </script>
+  {%- else -%}
+  <script async defer src="https://sdk.soopr.co/soopr.js"></script>
+  {%- endif -%}
+  {%- endif -%}

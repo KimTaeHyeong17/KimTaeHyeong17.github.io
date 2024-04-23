@@ -1,91 +1,48 @@
-# Site Settings
-name: HaningYa Blog
-title: HaningYa | CS Student
-description: iOS, Android, Java, Swift, (Cloud, ML, Algorithm)
-tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
-email: uuzaza@naver.com
-disqus_username: disqus_username
-show_hero: true
+title: OpenPMF
+description: > # this means to ignore newlines until "show_excerpts:"
+  사업 아이디어를 시장에서 빠르게 검증하세요! 1-2주 안에 빠른 시장 적합성 분석, 잠재 고객 발굴, 나아가 CRM 관리까지! OpenPMF 서비스로 사업과 시장, 고객을 매칭하세요!
+baseurl: "/openPMF"
+url: https://kimtaehyeong17.github.io/openPMF/ # change this URL, this is needed for generating right sitemap
 
+permalink: "/blog/:title/"
 
-# Social Media Settings
-# Remove the item if you don't need it
-github_username: KimTaeHyeong17
-# facebook_username: facebook_username
-# twitter_username: twitter_username
-instagram_username: cse_kth
-linkedin_username: taehyeong-kim-a6b8bb17b
-# medium_username: medium_username
-
-
-# Theme Settings
-themeColor: "#ff0a16"
-primaryDark: "#141414"
-accentDark: "#ffffff"
-lightGray: "#f2f2f2"
-texts: "#333333"
-
-
-# Posts Settings
-show_time_bar: true
-show_modal_on_exit: false
-show_modal_on_finish_post: true
-two_columns_layout: true
-
-
-# Advanced Settings
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "kimtaehyeong17.github.io" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
-language: "en"
-
-
-# Build settings
-markdown: kramdown
-highlighter: rouge
-permalink: /:title/
-collections:
-  authors:
-    output: true
-paginate_path: "/page/:num/"
-
-# Content paginator
-paginate_content:
-  enabled: true
-  debug: false
-  collections:
-    - posts
-  auto: false
-  separator: "--page-break--"
-  permalink: "/:num/"
-  seo_canonical: true
-  properties:
-    part:
-      is_generated: true
-    last:
-      is_generated: true
-    single:
-      is_generated: true
-
-# Plugins
 plugins:
-  - jekyll-paginate
-  - jekyll-paginate-content
+  - jekyll-feed
+  - jekyll-soopr-seo-tag
+  - jekyll-sitemap
+  - jekyll-minifier
 
-# Exclude my node related stuff
-exclude: [
-  'package.json',
-  'package-lock.json',
-  'src',
-  'node_modules',
-  'initpost.sh',
-  'Gemfile',
-  'Gemfile.lock',
-  'gulpfile.js',
-  'README.md'
-]
+css_dir: "assets/css" # defaults to "css"
+
+highlighter: rouge
+
+collections:
+  posts:
+    output: true
+    permalink: "/blog/:title"
+  pages:
+    output: true
+    permalink: "/:title"
+
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
+
+soopr:
+  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
+
+twitter:
+  card: summary_large_image
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - postcss.config.js
+  - purgecss.config.js
+  - tailwind.config.js
+  - .gitignore
+  - vendor

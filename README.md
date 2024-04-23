@@ -1,103 +1,88 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5f205b3a-73c2-472c-b052-82b95bdf36b7/deploy-status)](https://app.netlify.com/sites/sleepy-bhabha-00eedf/deploys)
+# Cookie - a fast and easy to deploy landing website for your next project.
+<img src="https://raw.githubusercontent.com/abhinavs/cookie/master/assets/img/cookie.png" />
 
-# Jekflix Template
-
-Version 2.0 is [here](https://github.com/thiagorossener/jekflix-template#v200)! 🎉🎊
-
-![Jekflix Template Cover Image](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1505354182/jekflix-logo_mfngps.png)
-
-See the [demo here](https://jekflix.rossener.com/).
-
-## What is it?
-
-A template for Jekyll inspired by Netflix panel for who loves movies and series and would like to have a blog with this cool appearance.
-
-![Jekflix Screenshot Image](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1566390829/jekflix-screenshot-2_zfiog2.jpg)
+Cookie is a Jekyll and Tailwind CSS based static website that makes the whole process of creating and launching landing websites extremely easy. With its responsive and mobile friendly pages, integrated blog, additional pages and [Soopr](https://www.soopr.co) integration, you can focus on building your product than landing website.
 
 ## Features
+* Well-designed landing page
+* Responsive and mobile friendly
+* Additional pages like about us, terms of service & privacy policy
+* Integrated blog, write content in markdown format
+* Easy to customize using Tailwind CSS
+* Fast and performant website
+* SEO optimized (uses [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag))
+* RSS feed (uses [Jekyll Feed](https://github.com/jekyll/jekyll-feed))
+* Easy to deploy, one-click deploy on [Netlify](https://www.netlify.com) possible
+* [Soopr](https://www.soopr.co) integrated - easy to customize share & like buttons, URL shortning and website analytics
+* Auto generated share images for social media using Soopr
 
-- [Live Search](https://github.com/thiagorossener/jekflix-template/wiki/Features#live-search)
-- [Estimated Reading Time](https://github.com/thiagorossener/jekflix-template/wiki/Features#estimated-reading-time)
-- [Reading Progress Bar](https://github.com/thiagorossener/jekflix-template/wiki/Features#reading-progress-bar) *(optional)*
-- ["New Post" tag](https://github.com/thiagorossener/jekflix-template/wiki/Features#new-post-tag)
-- [Load images on demand](https://github.com/thiagorossener/jekflix-template/wiki/Features#load-images-on-demand)
-- [Push Menu](https://github.com/thiagorossener/jekflix-template/wiki/Features#push-menu)
-- [SVG icons](https://github.com/thiagorossener/jekflix-template/wiki/Features#svg-icons)
-- [Shell script to create posts](https://github.com/thiagorossener/jekflix-template/wiki/Features#shell-script-to-create-posts)
-- [Tags page](https://github.com/thiagorossener/jekflix-template/wiki/Features#tags-page)
-- [About page](https://github.com/thiagorossener/jekflix-template/wiki/Features#about-page)
-- [Contact page](https://github.com/thiagorossener/jekflix-template/wiki/Features#contact-page)
-- [404 error page](https://github.com/thiagorossener/jekflix-template/wiki/Features#404-error-page)
-- [Feed RSS](https://github.com/thiagorossener/jekflix-template/wiki/Features#feed-rss)
-- [Disqus](https://github.com/thiagorossener/jekflix-template/wiki/Features#disqus) *(optional)*
-- [Featured post](https://github.com/thiagorossener/jekflix-template/wiki/Features#featured-post) *(optional)*
-- [Home page pagination](https://github.com/thiagorossener/jekflix-template/wiki/Features#home-page-pagination) *(optional)*
-- [Posts sidebar](https://github.com/thiagorossener/jekflix-template/wiki/Features#posts-sidebar) *(optional)*
-- [Paginated posts](https://github.com/thiagorossener/jekflix-template/wiki/Features#paginated-posts) *(optional)*
-- ["Before you go" modal](https://github.com/thiagorossener/jekflix-template/wiki/Features#before-you-go-modal) *(optional)*
-- [Post recommendation](https://github.com/thiagorossener/jekflix-template/wiki/Features#post-recommendation)
-- [Netlify CMS ready](https://github.com/thiagorossener/jekflix-template/wiki/Features#netlify-cms-ready)
 
-## SEO
+## Demo
+[![Netlify Status](https://api.netlify.com/api/v1/badges/58bd7992-1cc1-4fb9-b684-6be577a06324/deploy-status)](https://app.netlify.com/sites/cookie-demo/deploys)
+<br />
+You can see demo app deployed [here](https://cookie-demo.netlify.app/)
 
-- Google Analytics
-- Meta tags
-- JSON-LD
-- Sitemap.xml
-- Social Media ready
+## Used by
+* [APIC Blocks](https://www.apicblocks.com)
+* [Soopr](https://www.soopr.co)
+* [Annexr](https://www.annexr.com)
+* [APIC Agent](https://www.apicagent.com)
+* [Chhoti Si Kahani](https://www.chhotisikahani.com)
 
-## Setup
+## Why Jekyll?
+Jekyll is a static website generator - what it means is that in production, your site will be faster because it has been converted into HTML pages while deployment. Another reason is that by separating your landing website from your app website, your app servers get comparatively free and can boost performance for your regular customers. 
 
-- [Environment](https://github.com/thiagorossener/jekflix-template/wiki/setup#environment)
-- [Installing template](https://github.com/thiagorossener/jekflix-template/wiki/setup#installing-template)
-- [Running local](https://github.com/thiagorossener/jekflix-template/wiki/setup#running-local)
+Cookie uses Tailwind 2.0 which is a good improvement over Tailwind 1.0.
+**Update**: Now Cookie uses Tailwind 3.0
 
-## Customization
+## Installation
+1. [Fork this repository](https://github.com/abhinavs/cookie/fork).
+2. `cd cookie`
+3. `bin/bootstrap`
 
-See the [settings documentation](https://github.com/thiagorossener/jekflix-template/wiki/settings) to customize your theme colors, layout, titles and more.
+## Starting Server
+`bin/start` - development server will start at http://127.0.0.1:4061
 
-## Posts
+## Customizing
+1. You can customize landing page by modifying index.html in root directory.
+2. You can customize other website pages by modifying files present in `_pages` directory. You can add more pages too - you will be able to directly link to them using filename. Don't forget to change Terms & Privacy Policy.
+3. You can write blog posts in `_posts` directory. It's a regular Jekyll blog, and Tailwind Typography for better blog formating and code syntax highlighting is already included.
+4. You should also checkout `_config.yml` in root directory, and add relevant details. Many of them are used for SEO purposes.
+5. You should also add favicons in `custom-head.html` present in `_includes` directory. You can use [RealFaviconGenerator](https://realfavicongenerator.net/).
+6. You can customize image assets in `assets/img` directory.
+7. You will have to hook the 'Work with Us' form present on main page with a real backend.
+8. [Font Awesome](https://fontawesome.com/) is also integrated, to add any icon in your HTML files, you can refer to the website
+9. Sign up for free on [Soopr](https://www.soopr.co) and add your `publish_token` in `_config.yml` file - with this, each page gets short URL, like button and auto generated share image for social media.
 
-You can create posts manually using the [Front Matter properties](https://github.com/thiagorossener/jekflix-template/wiki/post#front-matter-properties) or automatically using the available [script](https://github.com/thiagorossener/jekflix-template/wiki/post#creating-a-post).
+<img src="https://raw.githubusercontent.com/abhinavs/cookie/master/assets/img/twitter_card.png" />
 
-## Release notes
+## Deploy Instructions
+Website can be easily deployed on all the cloud providers (AWS etc.), and on static website hosting services like Netlify & Vercel. You can also use this button to do one click deploy
+<br />
+<br />
+[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/abhinavs/cookie)
 
-### v2.0.0
-- Added optional [sidebar](https://github.com/thiagorossener/jekflix-template/wiki/Features#posts-sidebar)
-- Added optional [Featured post](https://github.com/thiagorossener/jekflix-template/wiki/features#featured-post)
-- Added optional ["Before you go" modal](https://github.com/thiagorossener/jekflix-template/wiki/features#before-you-go-modal)
-- Added optional [post pagination](https://github.com/thiagorossener/jekflix-template/wiki/features#paginated-posts)
-- Added [post recommendation](https://github.com/thiagorossener/jekflix-template/wiki/features#post-recommendation)
-- Added meta keywords to improve SEO
-- Added JSON-LD to improve SEO
-- Changed pagination to be [optional](https://github.com/thiagorossener/jekflix-template/wiki/features#home-page-pagination)
-- Improved [Tags page](https://github.com/thiagorossener/jekflix-template/wiki/features#tags-page)
-- Cleaned up and improved [Front Matter properties](https://github.com/thiagorossener/jekflix-template/wiki/post#front-matter-properties)
-- Set up [Netlify CMS](https://github.com/thiagorossener/jekflix-template/wiki/features#netlify-cms-ready)
-- Improved customization settings
-- Minor design updates
 
-### v1.0.1
-- Fixed bugs
-- Upgraded to Gulp 4
+## Contributing
+Bug reports and pull requests are welcome on GitHub at https://github.com/abhinavs/cookie.
 
-### v1.0.0
-- Initial release
-
-## Questions?
-
-File a [GitHub issue](https://github.com/thiagorossener/jekflix-template/issues/new) please.
-
-## Donation
-
-Did you like my work? Buy me a beer 😁🍺
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SAKL66RSDGH48&source=url)
-
-## Author
-
-[Thiago Rossener](https://rossener.com/)
+## Acknowledgement
+Cookie uses landing page provided by [Tailwind Starter Kit](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation) - thanks for providing an amazing landing page under MIT License. Initial code was also inspired by [Jekyll TailwindUI](https://github.com/chunlea/jekyll-tailwindui)
 
 ## License
+This project is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-*Jekflix Template* is available under the MIT license. See the [LICENSE](https://github.com/thiagorossener/jekflix-template/blob/master/LICENSE) file for more info.
+## Other Projects
+If you like Cookie, do check out my other projects
+*   [moonwalk](https://github.com/abhinavs/moonwalk) - a fast and minimal blog theme with clean dark mode
+*   [scoop](https://github.com/abhinavs/scoop) - a Sinatra boilerplate project using Corneal, ActiveRecord, Capistrano, Puma & Nginx
+*   [soopr](https://www.soopr.co) - a tool that supports you in content marketing
+*   [apicagent](https://www.apicagent.com) - a FREE API that extracts device details from user-agent string
+*   [pincodr](https://pincodr.apiclabs.com) - a FREE API for Indian pincodes
+*   [humangous](https://www.humangous.co) - create public and private 'working with you' guides
+*   [blockr](https://www.abhinav.co/blockr) - a CLI tool to help you easily block and unblock websites
+*   [microrequests](https://www.abhinav.co/microrequests) - a Python library to help you consume microservice efficiently
+
+
+✨⚡You can read more about me on my [blog](https://www.abhinav.co/about/) or follow me on Twitter - [@abhinav](https://twitter.com/abhinav)
+
